@@ -1,0 +1,14 @@
+Original ShapG               time     35859s = 9.96 h  mean S 0.2285
+Sampling Owen                time      9942s = 2.76 h  mean S 0.2502  vs Original 17/2/1 (W/L/T)  mean diff +0.0217  Wilcoxon p 0.001
+Improved ShapG (fixed)       time      3204s = 0.89 h  mean S 0.2389  vs Original 12/8/0 (W/L/T)  mean diff +0.0104  Wilcoxon p 0.261
+Improved ShapG (adaptive)    time      6882s = 1.91 h  mean S 0.2490  vs Original 16/4/0 (W/L/T)  mean diff +0.0205  Wilcoxon p 0.004
+adaptive vs Sampling Owen: 7/11/2  p 0.442
+adaptive vs Improved ShapG (fixed): 14/5/1  p 0.002
+regression     Improved ShapG (fixed)       vs Original 8/2  mean diff +0.0234
+regression     Improved ShapG (adaptive)    vs Original 9/1  mean diff +0.0345
+classification Improved ShapG (fixed)       vs Original 4/6  mean diff -0.0026
+classification Improved ShapG (adaptive)    vs Original 7/3  mean diff +0.0066
+adaptive below Original: crimedata_lgb, diabetes_lgb, MIC_lgb, MIC_mlp
+adaptive vs SamplingSHAP: 18 pairs, higher 15, lower 3, equal 0
+adaptive vs KernelSHAP: 14 pairs, higher 12, lower 2, equal 0
+adaptive vs Exact Shapley: 10 pairs, higher 3, lower 6, equal 1

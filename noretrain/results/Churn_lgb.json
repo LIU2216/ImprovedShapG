@@ -1,0 +1,223 @@
+{
+ "dataset": "Churn",
+ "model": "lgb",
+ "task": "classification",
+ "n_features": 10,
+ "K": 9,
+ "n_train": 132027,
+ "n_test": 33007,
+ "n_explained": 1000,
+ "methods": {
+  "original": {
+   "ranking": [
+    "NumOfProducts",
+    "Age",
+    "IsActiveMember",
+    "Gender",
+    "Geography",
+    "Balance",
+    "HasCrCard",
+    "CreditScore",
+    "EstimatedSalary",
+    "Tenure"
+   ],
+   "scores": [
+    0.13519735193008187,
+    0.11077464154399906,
+    0.09601181083195143,
+    0.07313392395769466,
+    0.06578412641179462,
+    0.017842408303184322,
+    0.01590451019579367,
+    0.0034998772288981936,
+    5.050063143539896e-05,
+    0.0
+   ],
+   "S": 0.3708217051410936,
+   "metrics": [
+    0.625104953820319,
+    0.5578802687843616,
+    0.3717465603365174,
+    0.32116788321167883,
+    0.3429611851361417,
+    0.08543738842132109,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "seconds": 0.7588688749997345,
+   "coalitions": 164,
+   "n_edges": 25,
+   "tau_vs_exact_mask": 0.9999999999999999,
+   "tau_vs_retrain": {
+    "shap_explainer": 0.911111111111111,
+    "original_shapg": 0.6,
+    "improved_shapg_fixed": 0.6444444444444444,
+    "improved_shapg_adaptive": 0.6444444444444444,
+    "exact_shapley": 0.6888888888888888
+   }
+  },
+  "fixed": {
+   "ranking": [
+    "NumOfProducts",
+    "Age",
+    "IsActiveMember",
+    "Geography",
+    "Gender",
+    "HasCrCard",
+    "Balance",
+    "CreditScore",
+    "EstimatedSalary",
+    "Tenure"
+   ],
+   "scores": [
+    0.1294989253475885,
+    0.11530594469273296,
+    0.09316020251468823,
+    0.0696531857163986,
+    0.06942781313101724,
+    0.019340282073370713,
+    0.015519270945585329,
+    0.004148077295731527,
+    5.050063143539896e-05,
+    1.1720996358711161e-05
+   ],
+   "S": 0.3715270287725231,
+   "metrics": [
+    0.625104953820319,
+    0.5578802687843616,
+    0.3717465603365174,
+    0.32116788321167883,
+    0.27845788415859674,
+    0.08543738842132109,
+    0.09002402326463523,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "seconds": 0.17652145800002472,
+   "coalitions": 162,
+   "n_edges": 30,
+   "tau_vs_exact_mask": 0.911111111111111,
+   "tau_vs_retrain": {
+    "shap_explainer": 0.8222222222222221,
+    "original_shapg": 0.6,
+    "improved_shapg_fixed": 0.6444444444444444,
+    "improved_shapg_adaptive": 0.6444444444444444,
+    "exact_shapley": 0.6888888888888888
+   }
+  },
+  "adaptive": {
+   "ranking": [
+    "NumOfProducts",
+    "Age",
+    "IsActiveMember",
+    "Gender",
+    "Geography",
+    "HasCrCard",
+    "Balance",
+    "CreditScore",
+    "EstimatedSalary",
+    "Tenure"
+   ],
+   "scores": [
+    0.12679119900244495,
+    0.11293402316310779,
+    0.1020085851290315,
+    0.07470940492042738,
+    0.06702060257030132,
+    0.01754978465747376,
+    0.012424669768216486,
+    0.004485905313007421,
+    2.913569995619294e-05,
+    5.450388360070422e-06
+   ],
+   "S": 0.36492189075242243,
+   "metrics": [
+    0.625104953820319,
+    0.5578802687843616,
+    0.3717465603365174,
+    0.32116788321167883,
+    0.3429611851361417,
+    0.08543738842132109,
+    0.09002402326463523,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "seconds": 0.2514917499997864,
+   "coalitions": 281,
+   "selected_index": 5,
+   "converged": true,
+   "graphs_run": 6,
+   "n_candidates": 7,
+   "selected_edges": 39,
+   "selected_avg_degree": 7.8,
+   "tau_vs_exact_mask": 0.9555555555555554,
+   "tau_vs_retrain": {
+    "shap_explainer": 0.8666666666666666,
+    "original_shapg": 0.5555555555555555,
+    "improved_shapg_fixed": 0.6,
+    "improved_shapg_adaptive": 0.6,
+    "exact_shapley": 0.6444444444444444
+   }
+  },
+  "exact": {
+   "ranking": [
+    "NumOfProducts",
+    "Age",
+    "IsActiveMember",
+    "Gender",
+    "Geography",
+    "Balance",
+    "HasCrCard",
+    "CreditScore",
+    "EstimatedSalary",
+    "Tenure"
+   ],
+   "scores": [
+    0.13161634266815356,
+    0.1078074669132589,
+    0.08876181528943793,
+    0.05751730305405657,
+    0.0535232495839903,
+    0.03518708065194778,
+    0.01299936384543362,
+    0.0032321058418123354,
+    0.0007671027674190743,
+    5.1668297011375056e-05
+   ],
+   "S": 0.3708217051410936,
+   "metrics": [
+    0.625104953820319,
+    0.5578802687843616,
+    0.3717465603365174,
+    0.32116788321167883,
+    0.3429611851361417,
+    0.08543738842132109,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "seconds": 0.41379900000038106,
+   "coalitions": 1024,
+   "tau_vs_exact_mask": 0.9999999999999999,
+   "tau_vs_retrain": {
+    "shap_explainer": 0.911111111111111,
+    "original_shapg": 0.6,
+    "improved_shapg_fixed": 0.6444444444444444,
+    "improved_shapg_adaptive": 0.6444444444444444,
+    "exact_shapley": 0.6888888888888888
+   }
+  }
+ },
+ "retrain_S": {
+  "shap_explainer": 0.34933583311169836,
+  "original_shapg": 0.36187841482416283,
+  "improved_shapg_fixed": 0.380305541621884,
+  "improved_shapg_adaptive": 0.3700185314868001,
+  "exact_shapley": 0.380305541621884
+ }
+}

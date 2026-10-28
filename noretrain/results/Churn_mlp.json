@@ -1,0 +1,223 @@
+{
+ "dataset": "Churn",
+ "model": "mlp",
+ "task": "classification",
+ "n_features": 10,
+ "K": 9,
+ "n_train": 132027,
+ "n_test": 33007,
+ "n_explained": 1000,
+ "methods": {
+  "original": {
+   "ranking": [
+    "Age",
+    "NumOfProducts",
+    "IsActiveMember",
+    "Geography",
+    "Gender",
+    "Balance",
+    "HasCrCard",
+    "EstimatedSalary",
+    "Tenure",
+    "CreditScore"
+   ],
+   "scores": [
+    0.11712524245976624,
+    0.1126561696313065,
+    0.07744944894671021,
+    0.07744300265473049,
+    0.05281114384300592,
+    0.02492905779180233,
+    0.020614062705099592,
+    0.006925327784014764,
+    0.006657231436561304,
+    0.003121475784271496
+   ],
+   "S": 0.43963388373606993,
+   "metrics": [
+    0.5763683753258037,
+    0.453243928959768,
+    0.23779096303057964,
+    0.06280587275693311,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "seconds": 0.7194558339997457,
+   "coalitions": 164,
+   "n_edges": 25,
+   "tau_vs_exact_mask": 0.9555555555555554,
+   "tau_vs_retrain": {
+    "shap_explainer": 0.8666666666666666,
+    "original_shapg": 0.7333333333333333,
+    "improved_shapg_fixed": 0.6888888888888888,
+    "improved_shapg_adaptive": 0.7777777777777777,
+    "exact_shapley": 0.8222222222222221
+   }
+  },
+  "fixed": {
+   "ranking": [
+    "Age",
+    "NumOfProducts",
+    "Geography",
+    "IsActiveMember",
+    "Gender",
+    "HasCrCard",
+    "Balance",
+    "EstimatedSalary",
+    "Tenure",
+    "CreditScore"
+   ],
+   "scores": [
+    0.11769298491926927,
+    0.11759017001538376,
+    0.08351755922002894,
+    0.07874286450888096,
+    0.0501896361957176,
+    0.037669095255561544,
+    0.027498917527724993,
+    0.006925327784014764,
+    0.004979096161899607,
+    0.003213853544366893
+   ],
+   "S": 0.4423610974215677,
+   "metrics": [
+    0.5763683753258037,
+    0.453243928959768,
+    0.23779096303057964,
+    0.04149951583898188,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "seconds": 0.32651583300048515,
+   "coalitions": 162,
+   "n_edges": 30,
+   "tau_vs_exact_mask": 0.8666666666666666,
+   "tau_vs_retrain": {
+    "shap_explainer": 0.7777777777777777,
+    "original_shapg": 0.7333333333333333,
+    "improved_shapg_fixed": 0.6,
+    "improved_shapg_adaptive": 0.8666666666666666,
+    "exact_shapley": 0.7333333333333333
+   }
+  },
+  "adaptive": {
+   "ranking": [
+    "NumOfProducts",
+    "Age",
+    "Geography",
+    "IsActiveMember",
+    "Gender",
+    "Balance",
+    "HasCrCard",
+    "EstimatedSalary",
+    "Tenure",
+    "CreditScore"
+   ],
+   "scores": [
+    0.11953686393061176,
+    0.1168268296777944,
+    0.08139340177031193,
+    0.07342970252975593,
+    0.05464519863533785,
+    0.03631595749656617,
+    0.020457791450613206,
+    0.008540817048150462,
+    0.005652330817668234,
+    0.0032780324672660992
+   ],
+   "S": 0.4342018118855062,
+   "metrics": [
+    0.5763683753258037,
+    0.49404035664007506,
+    0.23779096303057964,
+    0.04149951583898188,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "seconds": 0.2695794589999423,
+   "coalitions": 287,
+   "selected_index": 6,
+   "converged": true,
+   "graphs_run": 7,
+   "n_candidates": 7,
+   "selected_edges": 40,
+   "selected_avg_degree": 8.0,
+   "tau_vs_exact_mask": 0.9555555555555554,
+   "tau_vs_retrain": {
+    "shap_explainer": 0.7777777777777777,
+    "original_shapg": 0.6444444444444444,
+    "improved_shapg_fixed": 0.6,
+    "improved_shapg_adaptive": 0.7777777777777777,
+    "exact_shapley": 0.7333333333333333
+   }
+  },
+  "exact": {
+   "ranking": [
+    "NumOfProducts",
+    "Age",
+    "IsActiveMember",
+    "Geography",
+    "Gender",
+    "Balance",
+    "HasCrCard",
+    "EstimatedSalary",
+    "Tenure",
+    "CreditScore"
+   ],
+   "scores": [
+    0.10636651714159784,
+    0.10440111876053318,
+    0.07226711605412549,
+    0.07043343045686679,
+    0.04591624078097287,
+    0.0324973106785021,
+    0.016038774847160125,
+    0.006742087786638754,
+    0.004851421369482136,
+    0.004003800367780494
+   ],
+   "S": 0.43147459820000844,
+   "metrics": [
+    0.5763683753258037,
+    0.49404035664007506,
+    0.23779096303057964,
+    0.06280587275693311,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "seconds": 0.5370274999995672,
+   "coalitions": 1024,
+   "tau_vs_exact_mask": 0.9999999999999999,
+   "tau_vs_retrain": {
+    "shap_explainer": 0.8222222222222221,
+    "original_shapg": 0.6888888888888888,
+    "improved_shapg_fixed": 0.6444444444444444,
+    "improved_shapg_adaptive": 0.7333333333333333,
+    "exact_shapley": 0.7777777777777777
+   }
+  }
+ },
+ "retrain_S": {
+  "shap_explainer": 0.43963388373606993,
+  "original_shapg": 0.43963388373606993,
+  "improved_shapg_fixed": 0.41180500148070914,
+  "improved_shapg_adaptive": 0.4423610974215677,
+  "exact_shapley": 0.43963388373606993
+ }
+}
